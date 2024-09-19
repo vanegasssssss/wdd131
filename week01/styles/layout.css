@@ -4,31 +4,32 @@
 }
 
 body {
-    display: grid;
     height: 100vh;
-    grid-template: 17vh 10vh 55vh 1fr / 1fr 1fr 1fr ;
     width: 100%;
     grid-gap: 0;
+
+    display: grid;
+    grid-template: 20vh 60vh 20vh / 1fr 1fr 1fr ;
+    color: rgb(231, 220, 204);
 }
 
 header{
     grid-column: 1/4;
-    background-color: rgb(105, 186, 186);
+    background-color: rgb(105, 186, 109);
+    text-align: center;
 }
 
 nav{ 
     display: flex; 
     background-color: rgb(255, 115, 0);
-    grid-column: 1/4;
     list-style: none;
-    align-items: center;
-    
+    position: relative;
+    top: 7vh;
 }
 
 .navigation{
         list-style: none;
         display: flex;
-        align-items: center;
 }
 
 .navigation li{
@@ -49,9 +50,10 @@ nav{
 }
 
 footer{ 
-    background-color: rgb(105, 186, 186);
+    background-color: rgb(152, 105, 186);
     display: flex;
     grid-column: 1/4;
+    font-size: 200%;
 }
 
 .navigation{
@@ -60,12 +62,13 @@ footer{
 
 .left{
     grid-column: 1/3;
-    
+    font-size: 200%;
     background-color: rgb(11, 11, 33);
 }
 
 .right{
     grid-column: 3/4;
     background-color: rgb(43, 43, 154);
+    font-size: 200%;
 }
 
