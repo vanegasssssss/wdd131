@@ -70,6 +70,7 @@ main {
     width: 50%;
     flex: 1 auto;
     font-size: 140%;
+    border-top-right-radius: 5%;
 }
 
 #left img {
@@ -83,7 +84,7 @@ main {
     background-color: rgba(240, 255, 255, 0.588);
     height: 50%;
     padding: 2%;
-
+    border-top-right-radius: 8%;
 }
 
 #left .top {
@@ -100,10 +101,22 @@ main {
 
 #left .info2 {
     background-color: rgba(117, 77, 219, 0.588);
-    height: 35%;
+    height: 33%;
     width: 95%;
     margin: 2%;
+    text-align: justify;
+    padding: 1%;
 }
+
+.info2 img {
+    float: left;
+}
+
+/*
+.info p {
+    padding: ;
+}
+    */
 
 #right{
     width: 30%;
