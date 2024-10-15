@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <meta name="description" content="Media query learning activity example page.">
+    <meta name="author" content="Oscar Danilo Vanegas Rayo">
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+
+    </ul>
+
+    <script>
+      const inputchart = document.querySelector("#item");
+      const buttonA = document.querySelector("button");
+      const list = document.querySelector("ul");
+
+      function addItem() {
+        const liCreation = document.createElement('li');
+        const dontknowspan = document.createElement('span');
+        const deleteButton = document.createElement('button');
+
+        list.appendChild(liCreation);
+
+        dontknowspan.textContent = inputchart.value;
+        liCreation.appendChild(dontknowspan);
+
+        deleteButton.textContent = "Delete";
+        liCreation.appendChild(deleteButton);
+
+        deleteButton.onclick = function() {
+          liCreation.remove();
+        }
+
+        inputchart.value = '';
+
+        inputchart.focus();
+
+      }
+
+      buttonA.onclick = addItem;
+
+      inputchart.addEventListener ('keydown', (event) => {
+        if (event.key === 'Enter') {
+          addItem();
+        }
+      })
+
+    </script>
+  </body>
+</html>
