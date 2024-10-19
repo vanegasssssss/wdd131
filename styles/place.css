@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    position: relative;
+    height: 15vh;
+    text-align: center;
+    color: white;
+    font-size: 4.5em;
+    background-color: rgba(15, 75, 17, 0.908);
+    z-index: 5;
+    margin: 0;
+}
+
+picture {
+    background-color: #c1db16;
+}
+
+.capibara {
+    z-index: 0;
+    position: relative;
+}
+
+.capibara img{
+    width: 100%;
+    height: 100%;
+}
+
+.weather {
+    height: 65%;
+    width: 26%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.702);
+    top: 35%;
+    left: 2%;
+}
+
+.insidew {
+    height: 19%;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(16, 16, 224);
+    top: 5%;
+    left: -5%;
+}
+
+.insidew dl {
+    margin-top: 15%;
+}
+
+.pheader1{
+    font-size: 250%;
+    padding-left: 20%;
+    padding-bottom: 3%;
+}
+
+.data {
+    height: 65%;
+    width: 23%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.702);
+    top: 19%;
+    right: 2%;
+}
+
+.insided {
+    height: 17%;
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(16, 16, 224);
+    top: 5%;
+    left: -5%;
+}
+
+.pheader2 {
+    font-size: 250%;
+    padding-left: 20%;
+    padding-bottom: 3%;
+}
+
+.datainfo {
+    font-size: 140%;
+    width: 105%;
+    line-height: 1.6;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    column-gap: 10px; 
+    margin-left: 14%;
+    margin-top: 10%;
+}
+
+dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 160%;
+}
+
+dd {
+    margin-left: 20%;
+    margin-bottom: 15px;
+    width: 170%;
+}
+
+footer {
+    height: 5em;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(#c1db16, #126826);
+}
+
+p {
+    padding: 1%;
+}
+
+@media screen and (max-width: 740px){
+    html, main {
+        width: 740px;
+    }
+
+    header, main, footer {
+        max-width: 100%;
+   }
+
+    main {
+        min-height: 275vh;
+        background-color: #c1db16;
+    }
+
+    header h1 {
+        font-size: 220%;
+        height: 7rem;
+        padding-top: 11%;
+        text-align: center;
+    }
+
+    .weather {
+        width: 100vw;
+        top: 160%;
+        left: 27.5%;
+
+    }
+
+    .insidew {
+        width: 92%;
+    }
+
+    .pheader1 {
+        width: 40%;
+    }
+
+    dl {
+        margin-left: 15%;
+    }
+
+    dd {
+        margin-left: 10%;
+    }
+
+    .data {
+        width: 100%;
+        height: 50%;
+        top: 240%;
+        left: 27.5%;
+    }
+
+    .insided {
+        width: 91%;
+    }
+
+    .pheader2 {
+        width: 40%;
+    }
+
+
+
+}
