@@ -126,7 +126,7 @@ p {
 
 @media screen and (max-width: 740px){
     html, main {
-        width: 640px;
+        width: 740px;
     }
 
     header, main, footer {
