@@ -125,14 +125,21 @@ p {
 }
 
 @media screen and (max-width: 460px){
-    html, main {
+    html, main, body {
         width: 460px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
 
     main {
         min-height: 205vh;
         background-color: #c1db16;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     header h1 {
@@ -143,14 +150,15 @@ p {
     }
 
     .weather {
-        width: 100vw;
+        width: 90vw;
         top: 100%;
         left: 7.5%;
 
     }
 
     .insidew {
-        width: 92%;
+        width: 100%;
+        left: 0;
     }
 
     .pheader1 {
@@ -163,17 +171,20 @@ p {
 
     dd {
         margin-left: 10%;
+        margin: 0;
+        width: auto;
     }
 
     .data {
-        width: 100%;
+        width: 90vw;
         height: 50%;
         top: 170%;
         left: 7.5%;
     }
 
     .insided {
-        width: 91%;
+        width: 100%;
+        left: 0;
     }
 
     .pheader2 {
