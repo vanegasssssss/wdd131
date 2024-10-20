@@ -150,7 +150,7 @@ p {
     }
 
     .weather {
-        width: 90vw;
+        width: 90%;
         top: 100%;
         left: 7.5%;
 
@@ -176,7 +176,7 @@ p {
     }
 
     .data {
-        width: 90vw;
+        width: 90%;
         height: 50%;
         top: 170%;
         left: 7.5%;
