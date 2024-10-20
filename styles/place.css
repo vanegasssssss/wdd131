@@ -126,7 +126,7 @@ p {
 
 @media screen and (max-width: 460px){
     html, main, body {
-        width: 460px;
+        width: 260px;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -136,10 +136,12 @@ p {
     main {
         min-height: 205vh;
         background-color: #c1db16;
+        width: 260px;
     }
 
     body {
         overflow-x: hidden;
+        width: 260px;
     }
 
     header h1 {
@@ -147,12 +149,22 @@ p {
         height: 7rem;
         padding-top: 11%;
         text-align: center;
+        width: 266px;
+    }
+
+    picture, img {
+        max-width: 260px;
+    }
+
+    .capibara img{
+        width: 266px;
+        height: 100%;
     }
 
     .weather {
-        width: 90%;
-        top: 100%;
-        left: 7.5%;
+        width: 248px;
+        top: 70%;
+        left: 1.5%;
 
     }
 
@@ -166,7 +178,7 @@ p {
     }
 
     dl {
-        margin-left: 15%;
+        margin-left: 5%;
     }
 
     dd {
@@ -176,10 +188,9 @@ p {
     }
 
     .data {
-        width: 90%;
-        height: 50%;
-        top: 170%;
-        left: 7.5%;
+        width: 248px;
+        top: 140%;
+        left: 1.5%;
     }
 
     .insided {
@@ -191,6 +202,17 @@ p {
         width: 40%;
     }
 
+    .datainfo {
+        width: 20px;
+    }
+
+    p {
+        height: 55px;
+    }
+
+    footer{
+        width: 260px;
+    }
 
 
 }
