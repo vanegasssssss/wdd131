@@ -89,12 +89,17 @@ main h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 3%;
+    
 }
 
 .firstthree section {
     background-color: rgba(227, 99, 20, 0.828);
-    width: 20em;
+    width: 90%;
     padding: 1em;
     text-align: center;
     border-radius: 8px;
