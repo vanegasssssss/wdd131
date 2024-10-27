@@ -66,9 +66,43 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
 
+    {
+    templeName: "Madrid Spain Temple",
+    location: "Madrid, Spain",
+    dedicated: "1999, March, 19",
+    area: 45800,
+    imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
+    },
 
-    // Add more temple objects here...
-  ];
+    {
+    templeName: "Manila Philippines Temple",
+    location: "Manila, Phillippines",
+    dedicated: "1984, September, 25",
+    area: 26683,
+    imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+    },
+
+    {
+    templeName: "Bogotá Colombia Temple",
+    location: "Bogota, Colombia",
+    dedicated: "1999, April, 24",
+    area: 53500,
+    imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7733-main.jpg"
+    },
+
+    {
+    templeName: "Helsinki Finland Temple",
+    location: "Helsinki, Finland",
+    dedicated: "2006, October, 22",
+    area: 16350,
+    imageUrl:
+        "https://churchofjesuschristtemples.org/assets/img/temples/helsinki-finland-temple/helsinki-finland-temple-22169-main.jpg"
+    },
+
+];
 
 
   // ***********************************     Filters    ********************************************//
