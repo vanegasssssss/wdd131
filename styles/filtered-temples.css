@@ -194,13 +194,11 @@ footer {
         flex-wrap: wrap;
         gap: 1rem;
         justify-items: center;
-        width: 90vw;
-    
     }
     
     .firstthree section {
         background-color: rgba(227, 99, 20, 0.828);
-        width: 90%;
+        width: 20em;
         padding: 1em;
         text-align: center;
         border-radius: 8px;
