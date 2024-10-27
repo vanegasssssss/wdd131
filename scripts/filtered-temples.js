@@ -108,7 +108,10 @@ const temples = [
   // ***********************************     Filters    ********************************************//
 
 //Home
-
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+    createTempleCard();
+})
 
 //Older
 createTempleCard();
