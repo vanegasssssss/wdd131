@@ -100,39 +100,53 @@ section p {
     padding: 0.3em;
 }
 
-.firstthree {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-content: center;
+.roboto {
+    font-family: "Quicksand", sans-serif;
+}
+
+.open {
+    font-family: "CrimsonPro", serif;
+}
+
+.imgs {
+    page-break-inside: 1rem;
+    justify-items: center;
+    align-items: start;
+    padding: 1rem;
+    color: black;
+    width: 100%;
+    flex: 1;
+}
+
+.wireframe {
+    color: black;
+
+}
+
+.wireframe figure{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 90vw;
-    margin: 0 auto;
-    padding-left: 3%;
+    text-align: center;
+}
+
+.wireframe figure img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
     
 }
 
-.firstthree section {
-    background-color: rgba(227, 99, 20, 0.828);
-    width: 90%;
-    padding: 1em;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.firstthree img{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+figure {
+    flex: 1 1 auto;
 }
 
 figcaption {
-    color: white;
-    text-align: center;
+    color: rgb(1, 0, 0);
     margin-top: 0.5rem;
+    font-size: 1rem;
 }
+
 
 
 footer {
