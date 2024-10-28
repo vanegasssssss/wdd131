@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    background-color: #f4a261;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: beige;
+}
+
+#menu {
+    display: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    color: azure;
+}
+
+#menu.show::before {
+    content: "🔙"; 
+}
+
+.show li {
+    display: block;
+}
+
+header {
+    background-color: #173750;
+    display: flex;
+}
+
+header img {
+    width: 170px;
+    height: 90px;
+}
+
+.navigo {
+    list-style: none;
+    display: flex;
+    height: 17%;
+    flex: 1 1 auto;
+}
+
+.navigation { 
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 1%;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navigation li {
+    flex: 0;
+    margin-top: 1%;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6rem;
+    color: aliceblue;
+}
+
+main {
+    gap: 1rem;
+    justify-items: center;
+    padding: 2rem;
+    flex: 1;
+}
+
+section {
+    flex: 1;
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 83%;
+} 
+
+section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #173750;
+}
+
+section p {
+    color: rgb(19, 19, 52);
+    text-align: center;
+    height: 10%;
+    font-size: 1.5rem;
+    margin: 2%;
+    padding: 0.3em;
+}
+
+.firstthree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 3%;
+    
+}
+
+.firstthree section {
+    background-color: rgba(227, 99, 20, 0.828);
+    width: 90%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.firstthree img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+footer {
+    min-height: 3em;
+    background-color: #173750;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem; 
+}
+
+@media screen and (max-width: 640px){
+    header, main, footer {
+        max-width: 640px;
+        min-width: 390px;
+        margin: 1px;
+        padding: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    #menu {
+        display: block; 
+        font-size: 3rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+
+    #menu::before {
+        content: "≡";
+
+    }
+
+    .navigation {
+        display: none;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+        background-color: bisque;
+        height: max-content;
+        z-index: 222222;
+        top: 10%;
+        right: 0;
+        position: absolute;
+    }
+
+    .navigation.show {
+        display: flex;
+        flex-direction: column; 
+
+    }
+
+    .navigation li {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color:black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .navigation a:hover, .navigation a:active {
+        color: white;
+        background-color: black;
+    }
+
+    .firstthree {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-items: center;
+    }
+    
+    .firstthree section {
+        background-color: rgba(227, 99, 20, 0.828);
+        width: 20em;
+        padding: 1em;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .firstthree img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background-color: #173750;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        min-height: 5em;
+    }
+    
+}
