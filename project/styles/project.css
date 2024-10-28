@@ -109,13 +109,14 @@ section p {
 }
 
 .imgs {
+    display: grid;
     page-break-inside: 1rem;
     justify-items: center;
     align-items: start;
     padding: 1rem;
     color: black;
     width: 100%;
-    flex: 1;
+    
 }
 
 .wireframe {
@@ -131,7 +132,7 @@ section p {
 }
 
 .wireframe figure img {
-    width: 150px;
+    width: 250px;
     height: auto;
     border-radius: 8px;
     
@@ -139,6 +140,7 @@ section p {
 
 figure {
     flex: 1 1 auto;
+    margin: 5%;
 }
 
 figcaption {
